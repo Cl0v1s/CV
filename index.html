@@ -9,18 +9,19 @@
         <link rel="stylesheet" href="css/base.css">
 
         <!--insertion des scripts js-->
-
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
         <script type="text/javascript" src="js/base.js"></script>
     </head>
     <body>
-        <div id="fullscreen">
+        <div id="background"></div>
+        <div id="over">
             <div id="show">
                 <h1>Développeur</h1>
                 <h2>Clovis Portron</h2>
                 <input id="next" type="button" value="Commencer">
             </div>
             <nav>
-                <a href="#">A propos</a>
+                <a href="#">CV Papier</a>
                 <a href="#">Contact</a>
                 <a href="#">Clovis Portron 2015</a>
             </nav>
@@ -45,5 +46,7 @@
             </div>
 
         </div>
+        <!--TODO: script de live reload à supprimer en prod-->
+        <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>
