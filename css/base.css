@@ -11,7 +11,7 @@ html, body
   height: 100%;
   width: 100%;
   min-width: 920px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 h1, h2, h3, .title
@@ -46,7 +46,7 @@ div#background
   background-size: 150%;
   background-position: -120px;
   background-repeat: no-repeat;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 div#over
@@ -114,6 +114,9 @@ div#panel
 div.panel
 {
   padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 
 div.panel h1

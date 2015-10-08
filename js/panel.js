@@ -2,8 +2,10 @@ var panel = {
 
   open: false,
   current: undefined,
+  index: -1,
+  list: [moves],
 
-  show: function()
+  show: function(self)
   {
     //définition du contenu courant
     this.current = moves;
@@ -21,6 +23,12 @@ var panel = {
     }
     //changement du texte du background-position
     $("#next").val("Suivant");
+    //lancement de la première page
+    this.next(this);
+    //ajout de la nouvelle action au bouton suivant
+    $("#next").unbind();
+    var self = this;
+    $("#next").click(function(){self.next(self);});
   },
 
   redimension: function()
@@ -35,5 +43,14 @@ var panel = {
       $("#panel").animate({'left': "340px"}, 200, "swing");
       $("#show").animate({'left' : "170px"}, 200, "swing");
     }
+  },
+
+  next: function(self)
+  {
+    if(self.current != undefined)
+      self.current.destroy();
+    self.index++;
+    self.current = self.list[self.index];
+    self.current.initialize();
   },
 };
