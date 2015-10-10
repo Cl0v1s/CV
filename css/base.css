@@ -70,6 +70,26 @@ div#over #show
   text-align: center;
 }
 
+div#over #show .mouse>div
+{
+  background-image: url("./../assets/icons/mouse.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
+  margin-top: 200px;
+}
+
+div#over #show span
+{
+  display: block;
+  font-family: "Arctic";
+  color: #164654;
+  font-size: 0.5vw;
+
+}
+
 div#over nav
 {
   position: fixed;
