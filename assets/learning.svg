@@ -9,13 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 744.09448819 1052.3622047"
+   width="750"
+   height="510"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="dessin.svg">
+   sodipodi:docname="learning.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,10 +25,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="151.05686"
-     inkscape:cy="517.08278"
+     inkscape:cx="97.68733"
+     inkscape:cy="264.63925"
      inkscape:document-units="px"
-     inkscape:current-layer="g4159"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1538"
      inkscape:window-height="877"
@@ -44,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +53,7 @@
      id="layer1">
     <g
        id="g4159"
-       transform="translate(68.571429,1.4285714)">
+       transform="translate(55.714286,-252.85714)">
       <path
          inkscape:connector-curvature="0"
          id="path4149"
@@ -97,7 +96,7 @@
            id="tspan4284">très bien</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:50px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#009edd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:50px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#009edd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="-24.285715"
          y="392.36221"
          id="text4286"
@@ -108,7 +107,7 @@
            y="392.36221">DUT</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:30px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#009edd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:30px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#009edd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="-21.428572"
          y="422.36221"
          id="text4290"
@@ -120,11 +119,11 @@
     </g>
     <path
        style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.01015258;stroke-opacity:1"
-       d="m 164.28082,280.36599 c 0,-0.95378 12.55648,-21.62737 13.13577,-21.62737 0.54582,0 12.11804,20.69232 12.11804,21.6683 0,0.30528 -5.6821,0.55506 -12.6269,0.55506 -6.9448,0 -12.62691,-0.2682 -12.62691,-0.59599 z"
+       d="m 151.42368,26.080276 c 0,-0.95378 12.55648,-21.6273703 13.13577,-21.6273703 0.54582,0 12.11804,20.6923203 12.11804,21.6683003 0,0.30528 -5.6821,0.55506 -12.6269,0.55506 -6.9448,0 -12.62691,-0.2682 -12.62691,-0.59599 z"
        id="path4155"
        inkscape:connector-curvature="0" />
     <g
-       transform="translate(218.73612,0.59851292)"
+       transform="translate(205.87898,-253.6872)"
        id="g4159-1">
       <path
          inkscape:connector-curvature="0"

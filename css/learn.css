@@ -5,8 +5,16 @@
 }
 
 
-#learn img
+#learn div
 {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  background-image: url("./../assets/learning.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -45%;
+  margin-top: -35%;
 }
