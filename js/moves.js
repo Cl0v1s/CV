@@ -74,6 +74,7 @@ var moves = {
     var options = {nodes: {borderWidth: 0, font: {color: 'white', size: '21', face: "Arctic"}, shape: 'circle', },
       physics: {
         timestep: 1,
+        stabilization: {iterations: 10000}, 
       }
   };
 

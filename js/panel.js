@@ -88,7 +88,9 @@ var panel = {
 
   prev: function(self, animate)
   {
-    if(self.current != undefined || self.index == 0)
+    if(self.index == 0 )
+      return;
+    if(self.current != undefined)
       self.current.destroy();
     self.index--;
     self.current = self.list[self.index];
