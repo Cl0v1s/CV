@@ -1,0 +1,10 @@
+#exp>div
+{
+  width: 90%;
+  height: 100%;
+  background-image: url("./../assets/experience.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin-top: -10%;
+}

@@ -3,7 +3,7 @@ var panel = {
   open: false,
   current: undefined,
   index: -1,
-  list: [moves, learn],
+  list: [moves, learn, exp],
 
   show: function(self)
   {
