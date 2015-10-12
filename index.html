@@ -1,76 +1,72 @@
 <!DOCTYPE html>
 <html version="5">
-    <head>
-        <title>Développeur</title>
-        <meta charset="utf-8">
-        <meta lang="fr">
-        <meta description="Vous trouverez sur cette page le CV de Clovis Portron">
-        <!--insertion des pages de style-->
-        <link rel="stylesheet" href="css/lib/vis.css">
-        <link rel="stylesheet" href="css/learn.css">
-        <link rel="stylesheet" href="css/exp.css">
-        <link rel="stylesheet" href="css/moves.css">
-        <link rel="stylesheet" href="css/base.css">
 
-        <!--insertion des scripts js-->
-        <script type="text/javascript" src="js/lib/jquery.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.mousewheel.min.js"></script>
-        <script type="text/javascript" src="js/lib/vis.js"></script>
-        <script type="text/javascript" src="js/exp.js"></script>
-        <script type="text/javascript" src="js/learn.js"></script>
-        <script type="text/javascript" src="js/moves.js"></script>
-        <script type="text/javascript" src="js/panel.js"></script>
-        <script type="text/javascript" src="js/base.js"></script>
-    </head>
-    <body>
-        <div>
-          <div id="background"></div>
-          <div id="over">
-              <div id="show">
-                  <h1>Développeur Polyvalent</h1>
-                  <h2>Clovis Portron</h2>
-                  <input id="next" type="button" value="Commencer">
-                  <div class="mouse">
-                    <div></div>
-                    <span>
-                      Ou scrollez pour continuer
-                    </span>
-                  </div>
-              </div>
-              <nav>
-                  <a href="#">CV Papier</a>
-                  <a href="#">Contact</a>
-                  <a href="#">Clovis Portron 2015</a>
-              </nav>
-          </div>
-          <div id="panel">
-              <!--Définir ici l'ensemble des données qui peuvent possiblement être affichées-->
+<head>
+    <title>Développeur</title>
+    <meta charset="utf-8">
+    <meta lang="fr">
+    <meta description="Vous trouverez sur cette page le CV de Clovis Portron">
+    <!--insertion des pages de style-->
+    <link rel="stylesheet" href="css/lib/vis.css">
+    <link rel="stylesheet" href="css/learn.css">
+    <link rel="stylesheet" href="css/exp.css">
+    <link rel="stylesheet" href="css/moves.css">
+    <link rel="stylesheet" href="css/base.css">
 
-              <div id="moves" class="panel">
-                  <!--Parler ici des compétences-->
-                  <h1>Compétences</h1>
-                  <div id="viewport"></div>
-              </div>
+    <!--insertion des scripts js-->
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/lib/vis.js"></script>
+    <script type="text/javascript" src="js/exp.js"></script>
+    <script type="text/javascript" src="js/learn.js"></script>
+    <script type="text/javascript" src="js/moves.js"></script>
+    <script type="text/javascript" src="js/panel.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+</head>
 
-              <div id="learn" class="panel">
-                  <!--Parler ici de la formation-->
-                  <h1>Formation</h1>
-                  <div></div>
-              </div>
-
-              <div id="exp" class="panel">
-                  <!--Parler ici de l'expérience-->
-                  <h1>Expérience</h1>
-                  <div></div>
-              </div>
-
-              <div id="interests" class="panel">
-                  <!--Parler ici des centres d'intéret-->
-              </div>
-
-          </div>
+<body>
+    <div>
+        <div id="background"></div>
+        <div id="over">
+            <div id="show">
+                <h1>Développeur Polyvalent</h1>
+                <h2>Clovis Portron</h2>
+            </div>
+            <nav>
+                <a href="#">CV Papier</a>
+                <a href="#">Contact</a>
+                <a href="#">Clovis Portron 2015</a>
+            </nav>
         </div>
-        <!--TODO: script de live reload à supprimer en prod-->
-        <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
-    </body>
+        <div id="panel">
+            <!--Définir ici l'ensemble des données qui peuvent possiblement être affichées-->
+
+            <div id="moves">
+                <!--Parler ici des compétences-->
+                <h1>Compétences</h1>
+                <div id="viewport"></div>
+            </div>
+
+            <div id="learn">
+                <!--Parler ici de la formation-->
+                <h1>Formation</h1>
+                <img src="assets/learning.svg">
+            </div>
+
+            <div id="exp">
+                <!--Parler ici de l'expérience-->
+                <h1>Expérience</h1>
+                <img src="assets/experience.svg">
+            </div>
+
+            <div id="interests">
+                <!--Parler ici des centres d'intéret-->
+            </div>
+
+        </div>
+    </div>
+    <!--TODO: script de live reload à supprimer en prod-->
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+</body>
+
 </html>
