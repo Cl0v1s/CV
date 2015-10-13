@@ -88,6 +88,7 @@ div#over nav
 
 div#over nav a
 {
+
   margin-right: 20px;
   text-decoration: none;
   color: white;
@@ -113,6 +114,47 @@ div#slide
     position: absolute;
     top: 100%;
     width: 100%;
-    height: 600px;
+    height: 75%;
     background-color: white;
+}
+
+div#slide div>h1
+{
+    display: inline-block;
+    color: #164654;
+    border-bottom: 5px solid #164654;
+}
+
+div#slide #moves
+{
+    width: 100%;
+    height: 100%;
+}
+
+div#slide #moves #viewport
+{
+    width: 100%;
+    height: 100%;
+}
+
+div#slide #learn
+{
+    background-color:white;
+    background-image: url("./../assets/learning.svg");
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+div#slide #experience
+{
+    background-color:white;
+    background-image: url("./../assets/experience.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }

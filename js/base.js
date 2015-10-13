@@ -1,11 +1,17 @@
 $(document).ready(function()
 {
-
     //lancement du slideshow
     $("#slide").slidesjs({
-        width: 940,
-                height: 528
+        width: $("#slide").width(),
+        height: $("#slide").height(),
+        play: {
+            auto: true,
+        }
      });
+     //action lors du scroll
+     $(window).scroll(title);
+     //action lors de la redimension de la page
+    
     // create an array with nodes
     var nodes = new vis.DataSet([
         {id: 0, label: 'Compétences', level: 1, color: "#164654"},
@@ -36,16 +42,7 @@ $(document).ready(function()
         {id: 25, label: 'Méthodes de travail', level: 2, color: "#24758c", font: {size: 12}},
         {id: 26, label: 'Méthodes agiles', level: 3, color: "#2e9ab9", font: {size: 12}},
         {id: 27, label: 'Méthodes classiques', level: 3, color:"#2e9ab9", font: {size: 12}},
-
-
-
-
-
-
-
-
     ]);
-
     // create an array with edges
     var edges = new vis.DataSet([
       {from: 0, to: 1},
@@ -78,9 +75,15 @@ $(document).ready(function()
         stabilization: {iterations: 10000},
       }
   };
-
     // initialize your network!
     var network = new vis.Network(container, data, options);
-
-
 });
+
+function title(event)
+{
+    var height = $(window).height();
+    if($(window).scrollTop() >= 0.50*height)
+    {
+        $("#show").css({'top' : (height-$(window).scrollTop())+"px" })
+    }
+}
