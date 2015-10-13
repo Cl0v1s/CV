@@ -1,10 +1,5 @@
-var moves = {
-  //définit element suivant
-
-  initialize: function()
-  {
-    //affichage du block
-    $("#moves").css("display", "block");
+$(document).ready(function()
+{
     // create an array with nodes
     var nodes = new vis.DataSet([
         {id: 0, label: 'Compétences', level: 1, color: "#164654"},
@@ -74,17 +69,10 @@ var moves = {
     var options = {nodes: {borderWidth: 0, font: {color: 'white', size: '21', face: "Arctic"}, shape: 'circle', },
       physics: {
         timestep: 1,
-        stabilization: {iterations: 10000}, 
+        stabilization: {iterations: 10000},
       }
   };
 
     // initialize your network!
     var network = new vis.Network(container, data, options);
-
-  },
-
-  destroy: function()
-  {
-    $("#moves").css("display", "none");
-  },
-};
+});
