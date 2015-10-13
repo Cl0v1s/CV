@@ -118,12 +118,20 @@ div#slide
     background-color: white;
 }
 
-div#slide div>h1
+div#slide div .icon
 {
-    display: inline-block;
-    color: #164654;
-    border-bottom: 5px solid #164654;
-    margin: 10px;
+  /*background-color: #164654;*/
+  width: 110px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: auto 100%;
+  padding-left: 100px;
+  vertical-align: middle;
+  line-height: 100px;
+  font-size: 20px;
+  font-family: "Arctic";
+  color: #164654;
 }
 
 div#slide #moves
@@ -131,6 +139,11 @@ div#slide #moves
     width: 100%;
     height: 100%;
 
+}
+
+div#slide #moves .icon
+{
+  background-image: url("./../assets/icons/book.svg");
 }
 
 div#slide #moves #viewport
@@ -150,6 +163,11 @@ div#slide #learn
     height: 100%;
 }
 
+div#slide #learn .icon
+{
+  background-image: url("./../assets/icons/diploma.svg");
+}
+
 div#slide #experience
 {
     background-color:white;
@@ -159,6 +177,11 @@ div#slide #experience
     background-position: center;
     width: 100%;
     height: 100%;
+}
+
+div#slide #experience .icon
+{
+  background-image: url("./../assets/icons/shop.svg");
 }
 
 div#slide .slidesjs-previous, div#slide .slidesjs-next

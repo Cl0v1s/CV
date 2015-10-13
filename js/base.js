@@ -4,9 +4,6 @@ $(document).ready(function()
     $("#slide").slidesjs({
         width: $("#slide").width(),
         height: $("#slide").height(),
-        play: {
-            auto: true,
-        }
      });
      //action lors du scroll
      $(window).scroll(title);
