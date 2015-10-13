@@ -11,7 +11,7 @@ $(document).ready(function()
      //action lors du scroll
      $(window).scroll(title);
      //action lors de la redimension de la page
-    
+
     // create an array with nodes
     var nodes = new vis.DataSet([
         {id: 0, label: 'Compétences', level: 1, color: "#164654"},
@@ -82,8 +82,9 @@ $(document).ready(function()
 function title(event)
 {
     var height = $(window).height();
+    var correction = 0.04*$(window).width();
     if($(window).scrollTop() >= 0.50*height)
     {
-        $("#show").css({'top' : (height-$(window).scrollTop())+"px" })
+        $("#show").css({'top' : (height-$(window).scrollTop()-correction)+"px" })
     }
 }
