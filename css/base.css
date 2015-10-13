@@ -108,37 +108,11 @@ div#over #show h2
   font-size: 1.5vw;
 }
 
-div#panel
+div#slide
 {
     position: absolute;
     top: 100%;
     width: 100%;
+    height: 600px;
     background-color: white;
-}
-
-div#panel #learn
-{
-    width: 49%;
-    float: left;
-    height: 500px;
-    max-width: 541px;
-    position: relative;
-
-}
-
-
-
-div#panel #exp
-{
-    float: right;
-    width: 49%;
-    max-width: 541px;
-    position: relative;
-    height: 500px;
-
-}
-
-div#panel div img
-{
-
 }
