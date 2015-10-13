@@ -184,6 +184,24 @@ div#slide #experience .icon
   background-image: url("./../assets/icons/shop.svg");
 }
 
+div#slide #interests
+{
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+div#slide #interests .icon
+{
+  height: 75px;
+  background-image: url("./../assets/icons/interest.svg");
+  line-height: normal;
+  padding-top: 25px;
+}
+
 div#slide .slidesjs-previous, div#slide .slidesjs-next
 {
   width: 50px;
