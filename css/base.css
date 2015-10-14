@@ -158,7 +158,7 @@ div#slide #learn
     background-image: url("./../assets/learning.svg");
     background-repeat: no-repeat;
     background-size: auto 80%;
-    background-position: center;
+    background-position: 55% center;
     width: 100%;
     height: 100%;
 }
