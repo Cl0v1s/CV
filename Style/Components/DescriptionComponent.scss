@@ -1,0 +1,15 @@
+@import './../Chart';
+
+section.description
+{
+    width: 50%; 
+
+    margin: $default-margin;
+    margin-top: $default-margin*2;
+  
+    font-size: 20px;
+    color: $color-text;
+    font-style: bold; 
+
+    padding-left: 100px;   
+} 

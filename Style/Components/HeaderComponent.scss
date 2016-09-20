@@ -1,0 +1,38 @@
+@import './../Chart';
+
+header
+{
+    position: relative;
+
+    width: 100%;
+
+    padding: $default-margin;
+
+    color: $color-text;
+
+    h1
+    {
+        color: $color-dark; 
+    }
+
+    nav.classic
+    {
+        position: absolute;
+        right: $default-margin;
+        top: $default-margin;
+
+        ul li
+        {
+            display: inline;
+            margin: $default-margin; 
+        }  
+
+        @media (max-width: 540px)
+        {
+            &
+            {
+                display: none;
+            }
+        }
+    }
+}

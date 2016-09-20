@@ -1,0 +1,83 @@
+.content {
+  background-color: #333333;
+  width: 100%;
+  min-height: 100%; }
+
+header {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  color: white; }
+  header h1 {
+    color: #1E1E1E; }
+  header nav.classic {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    header nav.classic ul li {
+      display: inline;
+      margin: 10px; }
+    @media (max-width: 540px) {
+      header nav.classic {
+        display: none; } }
+
+section.description {
+  width: 50%;
+  margin: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-style: bold;
+  padding-left: 100px; }
+
+nav.social {
+  margin: 10px;
+  width: 100%;
+  text-align: center; }
+  nav.social a:after {
+    height: 0; }
+  nav.social ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #3F3F46;
+    border-radius: 2px;
+    transition: all 0.2s ease; }
+    nav.social ul li:hover {
+      background-color: #EC1F6A; }
+    nav.social ul li.twitter {
+      background-image: url("Assets/twitter.png"); }
+    nav.social ul li.github {
+      background-image: url("Assets/github.png"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  min-width: 300px;
+  background-color: #1E1E1E;
+  padding: 20px;
+  font-family: Arial; }
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white; }
+  a:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #EC1F6A;
+    transition: all 0.2s ease; }
+  a:hover:after {
+    width: 100%; }

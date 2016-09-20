@@ -1,0 +1,17 @@
+header {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  color: white; }
+  header h1 {
+    color: #ADADAD; }
+  header nav.classic {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    header nav.classic ul li {
+      display: inline;
+      margin: 10px; }
+    @media (max-width: 540px) {
+      header nav.classic {
+        display: none; } }
