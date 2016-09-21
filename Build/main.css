@@ -28,7 +28,37 @@ section.description {
   font-size: 20px;
   color: white;
   font-style: bold;
-  padding-left: 100px; }
+  padding-left: 100px;
+  float: left; }
+
+section.projects {
+  float: right;
+  margin: 10px;
+  width: 40%; }
+  section.projects table {
+    border-collapse: collapse;
+    width: 100%; }
+    section.projects table tr:first-of-type {
+      background-color: transparent; }
+      section.projects table tr:first-of-type td {
+        color: #1E1E1E; }
+    section.projects table tr {
+      background-color: #1E1E1E;
+      border-collapse: collapse;
+      transition: all 0.2s ease; }
+      section.projects table tr td.detail {
+        display: none; }
+      section.projects table tr:hover {
+        background-color: #EC1F6A;
+        transform: rotateX(360deg); }
+        section.projects table tr:hover td:first-of-type {
+          display: none; }
+        section.projects table tr:hover td.detail {
+          display: table-cell; }
+      section.projects table tr td {
+        border-collapse: collapse;
+        padding: 10px;
+        color: white; }
 
 nav.social {
   margin: 10px;

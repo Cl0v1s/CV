@@ -1,0 +1,59 @@
+@import './../Chart';
+
+section.projects
+{
+
+    float:right;
+    margin: $default-margin;
+
+    width: 40%;
+
+    table 
+    {
+        border-collapse: collapse;
+        width: 100%;
+        tr:first-of-type
+        {
+            background-color: rgba(0,0,0,0);
+            td
+            {
+                color: $color-dark; 
+            }
+        }
+
+        tr
+        {
+            background-color: $color-dark;
+            border-collapse: collapse;
+            transition: all 0.2s ease;
+
+            td.detail
+            {
+                display: none;
+            }
+
+            &:hover
+            {
+                background-color: $color-highlight;
+                transform: rotateX(360deg);
+
+                td:first-of-type
+                {
+                    display: none;
+                }
+
+                td.detail
+                {
+                    display: table-cell;
+                }
+            }
+
+            td
+            {
+                border-collapse: collapse;
+                padding: $default-margin;
+                color: $color-text; 
+            }
+        }
+    }
+}
