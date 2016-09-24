@@ -12,8 +12,14 @@ section.projects
     {
         border-collapse: collapse;
         width: 100%;
+        tr
+        {
+            height: 100px;
+        }
+
         tr:first-of-type
         {
+            height: initial;
             background-color: rgba(0,0,0,0);
             td
             {
@@ -21,7 +27,7 @@ section.projects
             }
         }
 
-        tr
+        tr.project
         {
             background-color: $color-dark;
             border-collapse: collapse;
@@ -30,6 +36,20 @@ section.projects
             td.detail
             {
                 display: none;
+            }
+
+            td.name
+            {
+                font-size: 22px;
+                padding-left: 100px + $default-margin;
+                position: relative;
+                img 
+                {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                }
             }
 
             &:hover
@@ -46,6 +66,7 @@ section.projects
                 {
                     display: table-cell;
                 }
+
             }
 
             td
@@ -53,6 +74,8 @@ section.projects
                 border-collapse: collapse;
                 padding: $default-margin;
                 color: $color-text; 
+                overflow: hidden;
+
             }
         }
     }

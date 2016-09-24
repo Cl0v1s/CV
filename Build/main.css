@@ -38,27 +38,51 @@ section.projects {
   section.projects table {
     border-collapse: collapse;
     width: 100%; }
+    section.projects table tr {
+      height: 100px; }
     section.projects table tr:first-of-type {
+      height: initial;
       background-color: transparent; }
       section.projects table tr:first-of-type td {
         color: #1E1E1E; }
-    section.projects table tr {
+    section.projects table tr.project {
       background-color: #1E1E1E;
       border-collapse: collapse;
       transition: all 0.2s ease; }
-      section.projects table tr td.detail {
+      section.projects table tr.project td.detail {
         display: none; }
-      section.projects table tr:hover {
+      section.projects table tr.project td.name {
+        font-size: 22px;
+        padding-left: 110px;
+        position: relative; }
+        section.projects table tr.project td.name img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%; }
+      section.projects table tr.project:hover {
         background-color: #EC1F6A;
         transform: rotateX(360deg); }
-        section.projects table tr:hover td:first-of-type {
+        section.projects table tr.project:hover td:first-of-type {
           display: none; }
-        section.projects table tr:hover td.detail {
+        section.projects table tr.project:hover td.detail {
           display: table-cell; }
-      section.projects table tr td {
+      section.projects table tr.project td {
         border-collapse: collapse;
         padding: 10px;
-        color: white; }
+        color: white;
+        overflow: hidden; }
+
+section.cursus {
+  clear: both;
+  margin: 10px;
+  width: 47%; }
+  section.cursus h2 {
+    color: #1E1E1E; }
+  section.cursus div {
+    background-color: #1E1E1E;
+    max-width: 400px;
+    height: 400px; }
 
 nav.social {
   margin: 10px;

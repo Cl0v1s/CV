@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "sourceMap": true,
+        "outFile": "Build/main.js"
+    },
+    "files": [
+      
+        "JS/Main.ts",
+        "JS/Parcours.ts",       
+        "JS/Vendor/Sigma.d.ts"         
+    ]
+ }
