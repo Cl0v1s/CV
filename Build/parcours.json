@@ -2,41 +2,126 @@
   "nodes": [
     {
       "id": "n0",
-      "label": "A node",
       "x": 0,
-      "y": 0,
+      "y": 1.5,
+      "size": 1
+    },
+    {
+      "id": "f0",
+      "label": "Baccalauréat Economie et Sociologie",
+      "x": 3,
+      "y": 1,
+      "size": 3
+    },
+    {
+      "id": "f1",
+      "label": "DUT informatique",
+      "x": 6,
+      "y": 1,
+      "size": 3, 
+      "image" : "prout.jpg"
+    },
+    {
+      "id": "f2",
+      "label": "Licence 3 informatique",
+      "x": 8,
+      "y": 1,
       "size": 3
     },
     {
       "id": "n1",
-      "label": "Another node",
-      "x": 3,
-      "y": 1,
-      "size": 2
+      "x": 9,
+      "y": 1.5,
+      "size": 1
+    },
+
+    {
+      "id": "j0",
+      "label": "Stage Service informatique CH Rochefort s/ mer",
+      "x": 1,
+      "y": 2,
+      "size": 3
     },
     {
-      "id": "n2",
-      "label": "And a last one",
-      "x": 1,
-      "y": 3,
-      "size": 1
+      "id": "j1",
+      "label": "Stage Service informatique CH Rochefort s/ mer",
+      "x": 2,
+      "y": 2,
+      "size": 3
+    },
+    {
+      "id": "j2",
+      "label": "Employé agricole",
+      "x": 4,
+      "y": 2,
+      "size": 3
+    },
+    {
+      "id": "j3",
+      "label": "Stage Service informatique Société de traitement des Eaux de Bordeaux Métropole",
+      "x": 6,
+      "y": 2,
+      "size": 3
+    },
+    {
+      "id": "j4",
+      "label": "Serveur/Barman Restaurant \"Le Brouage\", Brouage",
+      "x": 7,
+      "y": 2,
+      "size": 3
     }
   ],
   "edges": [
     {
       "id": "e0",
       "source": "n0",
+      "target": "f0"
+    },
+        {
+      "id": "e1",
+      "source": "f0",
+      "target": "f1"
+    },
+        {
+      "id": "e2",
+      "source": "f1",
+      "target": "f2"
+    },
+    {
+      "id": "e3",
+      "source": "f2",
       "target": "n1"
     },
     {
-      "id": "e1",
-      "source": "n1",
-      "target": "n2"
+      "id": "e4",
+      "source": "n0",
+      "target": "j0"
+    },
+        {
+      "id": "e5",
+      "source": "j0",
+      "target": "j1"
+    },
+        {
+      "id": "e6",
+      "source": "j1",
+      "target": "j2"
     },
     {
-      "id": "e2",
-      "source": "n2",
-      "target": "n0"
+      "id": "e7",
+      "source": "j2",
+      "target": "j3"
+    },
+        {
+      "id": "e8",
+      "source": "j3",
+      "target": "j4"
+    },
+        {
+      "id": "e9",
+      "source": "j4",
+      "target": "n1"
     }
+
   ]
 }

@@ -20,7 +20,8 @@ var Parcours = (function () {
         sigma.parsers.json('parcours.json', {
             container: endpoint,
             settings: {
-                defaultNodeColor: '#ec5148'
+                defaultNodeColor: '#ec5148',
+                labelThreshold: 50
             }
         });
     };
