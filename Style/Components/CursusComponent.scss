@@ -3,6 +3,7 @@
 section.cursus
 {
     clear:both;
+    padding-left: 100px;
 
     margin: $default-margin;
     
@@ -15,7 +16,8 @@ section.cursus
 
     div
     {
-        background-color: $color-dark;
+        background-image: url("Assets/Cursus.png");
+        background-size: 100% 100%;
         max-width: 100%;
         height: 400px;
     }

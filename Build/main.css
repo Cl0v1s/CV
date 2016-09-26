@@ -59,7 +59,8 @@ section.projects {
           position: absolute;
           top: 0;
           left: 0;
-          height: 100%; }
+          height: 100%;
+          width: 100px; }
       section.projects table tr.project:hover {
         background-color: #EC1F6A;
         transform: rotateX(360deg); }
@@ -75,12 +76,14 @@ section.projects {
 
 section.cursus {
   clear: both;
+  padding-left: 100px;
   margin: 10px;
   width: 47%; }
   section.cursus h2 {
     color: #1E1E1E; }
   section.cursus div {
-    background-color: #1E1E1E;
+    background-image: url("Assets/Cursus.png");
+    background-size: 100% 100%;
     max-width: 100%;
     height: 400px; }
 
