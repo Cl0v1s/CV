@@ -5,8 +5,11 @@ section.projects
 
     float:right;
     margin: $default-margin;
-
+    overflow: hidden;
+    
     width: 40%;
+    min-width: $default-min-width; // Arbitraire, empirique
+
 
     table 
     {
@@ -31,16 +34,33 @@ section.projects
         {
             background-color: $color-dark;
             border-collapse: collapse;
-            transition: all 0.2s ease;
+            transition: all 0.5s ease;
+
+            td+td
+            {
+                nav.social
+                {
+                    margin: 0;
+                    a
+                    {
+                        margin: auto;
+                    }
+                }
+
+            }
 
             td.detail
             {
                 display: none;
+                padding-right: 50px;
+                box-sizing: border-box;
+                
             }
 
             td.name
             {
-                font-size: 22px;
+                font-size: 1.5vw;
+                font-style: bold;
                 padding-left: 100px + $default-margin;
                 position: relative;
                 img 
@@ -66,6 +86,7 @@ section.projects
                 td.detail
                 {
                     display: table-cell;
+                    
                 }
 
             }
@@ -78,6 +99,17 @@ section.projects
                 overflow: hidden;
 
             }
+        }
+    }
+
+    @media (max-width: 885px)
+    {
+        &
+        {
+            float: none;
+            margin: auto;
+            margin-top: $default-margin;
+
         }
     }
 }

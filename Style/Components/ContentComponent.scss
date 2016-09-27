@@ -6,5 +6,7 @@
     
     
     width: 100%;
+    min-width: $default-min-width; // Arbitraire, empirique
+
     min-height: 100%; 
 }

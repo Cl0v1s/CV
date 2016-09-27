@@ -3,6 +3,8 @@
 section.description
 {
     width: 50%; 
+    min-width: $default-min-width; // Arbitraire, empirique
+
 
     margin: $default-margin;
     margin-top: $default-margin*2;
@@ -14,5 +16,15 @@ section.description
     padding-left: 100px; 
 
     float: left; 
+
+    @media (max-width: 885px)
+    {
+        &
+        {
+            padding-left: 0px;
+            float: none;
+            margin: auto;
+        }
+    }
 
 } 
