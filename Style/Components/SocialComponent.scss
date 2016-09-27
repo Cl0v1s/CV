@@ -36,6 +36,11 @@ nav.social
                 background-color: $color-highlight;
             }
 
+            &.mail
+            {
+                background-image: url("Assets/mail.png");
+            }
+
             &.twitter
             {
                 background-image: url("Assets/twitter.png");

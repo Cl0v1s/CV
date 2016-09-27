@@ -132,6 +132,8 @@ nav.social {
     transition: all 0.2s ease; }
     nav.social ul li:hover {
       background-color: #EC1F6A; }
+    nav.social ul li.mail {
+      background-image: url("Assets/mail.png"); }
     nav.social ul li.twitter {
       background-image: url("Assets/twitter.png"); }
     nav.social ul li.github {
