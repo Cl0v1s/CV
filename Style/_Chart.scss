@@ -3,10 +3,10 @@
 //--TYPOGRAPHIE
 
 //---Couleurs
-$color-text:#E9E9E2; /*Blanc gris*/
+$color-text-base:#E9E9E2; /*Blanc gris*/
 
 //---Ecriture type gras, rappel des mots cl�s du programme
-$color-high:#A63258; /*Rose*/
+$color-text-high:#A63258; /*Rose*/
 
 //---Ecriture type lien 
 $color-a-link : #5CC1D3; /*Actif : bleu monokai*/
@@ -14,7 +14,7 @@ $color-a-hover : #89EDFF; /*Survol : bleu plus clair*/
 $color-a-visited :#2D7986; /*Visit� : bleu plus fonc�*/
 
 //---Ecriture H1, rappel m�thode
-$color-h1 : #91C710; /*Vert*/
+$color-text-title : #91C710; /*Vert*/
 
 //---Ecriture citation 
 $color : #DED469 ; /*Jaune*/
@@ -34,5 +34,9 @@ $font-size-h1 : ;*/
 
 $color-base : #272822;
 $color-dark : #161714;
-$color-hight : #49483E;
+$color-high : #49483E;
+
+// Valeurs par défaut 
+
+$default-margin : 10px;
 
