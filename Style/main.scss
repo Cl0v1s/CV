@@ -1,7 +1,10 @@
 // Inclusion des composants et autres élements
 @import 'Chart';
 
-
+@import 'Components/ButtonLinkComponent';
+@import 'Components/MenuCloseComponent';
+@import 'Components/MenuOpenComponent';
+@import 'Components/ProjectComponent';
   
 // Remise à zéro 
 *
@@ -9,6 +12,7 @@
     margin: 0;   
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
  
 html, body
