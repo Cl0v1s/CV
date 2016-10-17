@@ -1,12 +1,6 @@
 // Inclusion des composants et autres élements
 @import 'Chart';
 
-@import 'Components/ContentComponent';
-@import 'Components/HeaderComponent';
-@import 'Components/DescriptionComponent';
-@import 'Components/ProjectsComponent';
-@import 'Components/CursusComponent';
-@import 'Components/SocialComponent';
 
   
 // Remise à zéro 
@@ -22,44 +16,3 @@ html, body
     height: 100%;
 }  
  
-// Définition styles de bases
-body
-{ 
-    min-width: 300px;
-    background-color: $color-dark;
-    padding: 20px;
-    font-family: $font-base;
-}
-
-a
-{
-    position: relative; 
-    text-decoration: none;
-    color: $color-text;
-
-    &:after
-    { 
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0; 
-        width: 0;
-        height: 5px;
-        background-color: $color-highlight;
-        transition: all 0.2s ease;
-    }
-
-    &:hover
-    {
-        &:after
-        {
-            width: 100%;
-        }
-
-    }
-}
-
-footer
-{
-    text-align: center;
-}
