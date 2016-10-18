@@ -9,11 +9,12 @@
      position: fixed;
      top: $default-margin;
      right: $default-margin;
+     z-index: 1;
 
      width: 50px;
      height: 50px;
 
-     border-radius: 10%;
+     border-radius: $default-border-radius;
 
      background-color: $color-high;
      background-image: url("Assets/Menu.svg");

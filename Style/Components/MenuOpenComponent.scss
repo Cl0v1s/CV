@@ -1,0 +1,63 @@
+@import './../Chart';
+/**
+ * Représente le menu de navigation ouvert 
+ **/
+div#Menu-open
+{
+    display: block;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width:  200px;
+
+    padding: $default-margin;
+    padding-top: 60px;
+
+    background-color: $color-high;
+
+    border-radius: $default-border-radius;
+
+    font-family: $font-base; 
+    color: $color-text-base;
+
+    h2
+    {
+        color: $color-text-title;
+        font-family: $font-title;
+
+        margin-top: $default-margin;
+    }
+
+    ul.tree
+    {
+        li
+        {
+            $line-size: 10px;
+
+            display: block;
+            position: relative;
+            
+            border-left: 2px solid $color-text-base;
+            padding-left: $line-size+$default-margin;
+
+            &:before
+            {
+                content: "";
+
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+
+                margin-top: -1px;
+
+                width: $line-size;
+                height: 2px;
+
+                background-color: $color-text-base; 
+            }
+        }
+    }
+}

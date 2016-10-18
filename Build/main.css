@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /*Blanc gris*/
 /*Rose*/
 /*Actif : bleu monokai*/
@@ -9,6 +11,8 @@
 /*$line-height : ;
 $font-size-defaut : ;
 $font-size-h1 : ;*/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /*Blanc gris*/
 /*Rose*/
 /*Actif : bleu monokai*/
@@ -23,6 +27,8 @@ $font-size-h1 : ;*/
  * Représente les boutons graphiques permettant de 
  * faire le lien entre le site et différents réseaux sociaux 
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /*Blanc gris*/
 /*Rose*/
 /*Actif : bleu monokai*/
@@ -36,20 +42,70 @@ $font-size-h1 : ;*/
 /**
  * Représente le bouton de menu fermé 
  **/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 div#Menu-close {
   display: block;
   position: fixed;
   top: 10px;
   right: 10px;
+  z-index: 1;
   width: 50px;
   height: 50px;
-  border-radius: 10%;
+  border-radius: 5px;
   background-color: #49483E;
   background-image: url("Assets/Menu.svg");
   background-size: 100% 100%;
   transition: all ease 0.05s; }
   div#Menu-close:hover {
     transform: rotate(90deg); }
+
+/*Blanc gris*/
+/*Rose*/
+/*Actif : bleu monokai*/
+/*Survol : bleu plus clair*/
+/*Visit� : bleu plus fonc�*/
+/*Vert*/
+/*Jaune*/
+/*$line-height : ;
+$font-size-defaut : ;
+$font-size-h1 : ;*/
+/**
+ * Représente le menu de navigation ouvert 
+ **/
+div#Menu-open {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  padding-top: 60px;
+  background-color: #49483E;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  color: #E9E9E2; }
+  div#Menu-open h2 {
+    color: #91C710;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 10px; }
+  div#Menu-open ul.tree li {
+    display: block;
+    position: relative;
+    border-left: 2px solid #E9E9E2;
+    padding-left: 20px; }
+    div#Menu-open ul.tree li:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -1px;
+      width: 10px;
+      height: 2px;
+      background-color: #E9E9E2; }
 
 /*Blanc gris*/
 /*Rose*/
@@ -69,11 +125,11 @@ div.Project {
   width: 25%;
   height: 500px;
   border-radius: 5%;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: #E9E9E2;
   background-color: #272822; }
   div.Project h1 {
-    font-family: "Roboto";
+    font-family: "Roboto Condensed", sans-serif;
     color: #91C710;
     padding: 10px; }
   div.Project div.image {
@@ -81,7 +137,7 @@ div.Project {
     height: 200px;
     background-size: cover; }
   div.Project div.description {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: #E9E9E2;
     padding: 10px; }
   div.Project nav {
