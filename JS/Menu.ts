@@ -24,10 +24,6 @@ class Menu {
         $(toggle).click(() => {
             this.Toggle();
         });
-
-        console.log(this);
-
-        console.log("Menu Initialized !");
     }
 
     /**
@@ -39,7 +35,6 @@ class Menu {
         } else {
             this.Open();
         }
-        console.log("Menu Toggle !");
     }
 
     public Open(): void {
