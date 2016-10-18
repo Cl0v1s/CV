@@ -2,16 +2,23 @@
 /**
  * Panel présentant un projet 
  **/
-div.Project
+li.Project
 {
-    float: left;
+    $height: 500px;
+    $center-height: 600px;
+
+    display: inline-block;
     width: 25%;
-    height: 500px;
+    height: $height;
+
+    margin-bottom: ($center-height - $height) / 2; 
 
     border-radius: 5%;
 
     font-family: $font-base;
     color: $color-text-base;
+    text-align: initial;
+
 
     background-color: $color-base;
 
@@ -45,6 +52,18 @@ div.Project
         width: 100%;
 
         text-align: center;
+    }
+
+    &+.Project
+    {
+        height: $center-height;
+        margin-bottom: 0;
+    }
+
+    &+.Project+.Project
+    {
+        height: $height;
+        margin-bottom: ($center-height - $height) / 2; 
     }
 
 }

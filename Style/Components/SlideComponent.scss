@@ -1,0 +1,21 @@
+@import './../Chart';
+
+div#slide
+{
+
+    display: table;
+    table-layout: fixed;
+
+    height: 100%;
+    width: 100%;
+
+    ul
+    {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+}
