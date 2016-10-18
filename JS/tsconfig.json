@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+            "target": "es5",
+            "sourceMap": true,
+            "outFile": "./../Build/main.js"
+    },
+    "files": 
+    [
+        "Vendor/jquery.d.ts",
+        "Menu.ts",
+        "App.ts"
+    ]
+
+    
+}
