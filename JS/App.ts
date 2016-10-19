@@ -8,4 +8,4 @@ class App
     } 
 }
 
-$(document).ready(function(){ App.Main();});
+$(window).bind('load', function(){ App.Main();});

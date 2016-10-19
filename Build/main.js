@@ -18,8 +18,6 @@ var Menu = (function () {
         $(toggle).click(function () {
             _this.Toggle();
         });
-        console.log(this);
-        console.log("Menu Initialized !");
     }
     /**
      * Ouvre le menu si il est fermé, le ferme sinon
@@ -31,7 +29,6 @@ var Menu = (function () {
         else {
             this.Open();
         }
-        console.log("Menu Toggle !");
     };
     Menu.prototype.Open = function () {
         var _this = this;
@@ -64,5 +61,5 @@ var App = (function () {
     };
     return App;
 })();
-$(document).ready(function () { App.Main(); });
+$(window).bind('load', function () { App.Main(); });
 //# sourceMappingURL=main.js.map

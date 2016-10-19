@@ -56,7 +56,6 @@ div#Menu-close {
   z-index: 1;
   width: 50px;
   height: 50px;
-  border-radius: 5px;
   background-color: #49483E;
   background-image: url("Assets/Menu.svg");
   background-size: 70% 70%;
@@ -85,10 +84,10 @@ div#Menu-open {
   top: 0;
   right: 0;
   width: 200px;
+  height: 260px;
   padding: 10px;
   padding-top: 60px;
-  background-color: #49483E;
-  border-radius: 5px;
+  background-color: #272822;
   font-family: "Open Sans", sans-serif;
   color: #E9E9E2; }
   div#Menu-open h2 {
@@ -126,18 +125,29 @@ $font-size-h1 : ;*/
  **/
 li.Project {
   display: inline-block;
+  position: relative;
   width: 25%;
   height: 500px;
   margin-bottom: 50px;
-  border-radius: 5%;
   font-family: "Open Sans", sans-serif;
   color: #E9E9E2;
   text-align: initial;
   background-color: #272822; }
+  li.Project:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid white; }
   li.Project h1 {
     font-family: "Roboto Condensed", sans-serif;
     color: #91C710;
-    padding: 10px; }
+    padding: 10px;
+    font-weight: bold;
+    text-align: center; }
   li.Project div.image {
     width: 100%;
     height: 200px;

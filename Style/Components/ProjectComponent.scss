@@ -8,12 +8,11 @@ li.Project
     $center-height: 600px;
 
     display: inline-block;
+    position: relative;
     width: 25%;
     height: $height;
 
     margin-bottom: ($center-height - $height) / 2; 
-
-    border-radius: 5%;
 
     font-family: $font-base;
     color: $color-text-base;
@@ -22,11 +21,29 @@ li.Project
 
     background-color: $color-base;
 
+    &:before
+    {
+        content : "";
+
+        position: absolute;
+        top:0;
+        left: 0;
+
+        width: 10px;
+        height: 10px;
+
+        border: 10px solid rgba(0,0,0,0);
+        border-bottom: 10px solid white;
+    }
+
+
     h1
     {
         font-family: $font-title;
         color: $color-text-title;
         padding: $default-margin;
+        font-weight: bold;
+        text-align: center;
 
     }
 

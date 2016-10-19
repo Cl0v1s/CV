@@ -11,13 +11,12 @@ div#Menu-open
     right: 0;
 
     width:  200px;
+    height: 260px;
 
     padding: $default-margin;
     padding-top: 60px;
 
-    background-color: $color-high;
-
-    border-radius: $default-border-radius;
+    background-color: $color-base;
 
     font-family: $font-base; 
     color: $color-text-base;
