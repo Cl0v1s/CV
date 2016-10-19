@@ -6,6 +6,7 @@ class Menu {
     private height: string;
     private width: string;
     private open: boolean;
+    public locked : boolean;
 
     constructor(target: string, toggle: string) {
 
@@ -13,17 +14,31 @@ class Menu {
         this.height = this.target.css("height");
         this.width = this.target.css("width");
         this.open = true;
+        this.locked = false;
+
         this.Toggle();
 
         $(toggle).mouseover(() => {
+            console.log("Over");
+            
             this.Open();
         });
         $(toggle).mouseout(() => {
+            console.log("Out");
+            
             this.Close();
         });
         $(toggle).click(() => {
+            console.log("Toggle");
+            
             this.Toggle();
         });
+    }
+
+    private Lock() : void
+    {
+        this.locked = true;
+        setTimeout(() => {this.locked = false;}, 50);
     }
 
     /**
@@ -38,22 +53,28 @@ class Menu {
     }
 
     public Open(): void {
+        if(this.locked)
+            return;
         this.target.css("display", "block");
         this.target.animate({
             height: this.height, 
             width: this.width
         }, 50, () => {
             this.open = true;
-        })
+        });
+        this.Lock();
     }
 
     public Close(): void {
+        if(this.locked)
+            return;
         this.target.animate({
             height: 0, 
             width: 0
         }, 50, () => {
             this.target.css("display", "none");
             this.open = false;
-        })
+        });
+        this.Lock();
     }
 }

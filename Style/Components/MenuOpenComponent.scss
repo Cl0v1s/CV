@@ -9,6 +9,7 @@ div#Menu-open
     position: fixed;
     top: 0;
     right: 0;
+    z-index : 1;
 
     width:  200px;
     height: 260px;
@@ -17,6 +18,8 @@ div#Menu-open
     padding-top: 60px;
 
     background-color: $color-base;
+    box-shadow: 0px 0px 5px black;
+
 
     font-family: $font-base; 
     color: $color-text-base;
