@@ -27,6 +27,7 @@ class Slide
         let self: Slide = this;
         let first : JQuery = this.target.find("li:first");
         let iMargin : string  = first.css("margin-left"); // sauvegarde du margin pour restauration
+        
         first.animate(
             {
                 "margin-left" : -first.width() 
@@ -44,6 +45,19 @@ class Slide
 
     public Previous() :  void
     {
+        let self : Slide = this;
+        let last : JQuery = this.target.find("li:last");
+        let iMargin : string = last.css("margin-left");
 
+        last.css("margin-left", -last.width());
+        this.target.find("li:first").before(last);
+        last.animate(
+            {
+                "margin-left" : iMargin
+            }, 50, function()
+            {
+                self.ApplyStyles();
+            }
+        )
     }
 }

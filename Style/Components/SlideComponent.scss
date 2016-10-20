@@ -2,6 +2,7 @@
 
 div#slide
 {
+    position: relative;
 
     display: table;
     table-layout: fixed;
@@ -17,5 +18,30 @@ div#slide
         width: 100%;
         height: 100%;
         list-style: none;
+    }
+
+    .next 
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25%;
+        height: 100%;
+        background-color: red;
+
+        z-index: 1;
+    }
+
+    .previous
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 100%;
+        background-color: red;
+    
+        z-index: 1;
+
     }
 }

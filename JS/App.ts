@@ -5,6 +5,9 @@ class App
         let menu : Menu = new Menu("#Menu-open", "#Menu-close");
         let slide : Slide = new Slide("#slide");
 
+        $("#slide .next").click(() => {slide.Next();});
+        $("#slide .previous").click(() => {slide.Previous();});
+
         console.log("Started !");
     } 
 }

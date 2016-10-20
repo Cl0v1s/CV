@@ -94,6 +94,16 @@ var Slide = (function () {
         });
     };
     Slide.prototype.Previous = function () {
+        var self = this;
+        var last = this.target.find("li:last");
+        var iMargin = last.css("margin-left");
+        last.css("margin-left", -last.width());
+        this.target.find("li:first").before(last);
+        last.animate({
+            "margin-left": iMargin
+        }, 50, function () {
+            self.ApplyStyles();
+        });
     };
     return Slide;
 })();
@@ -103,6 +113,8 @@ var App = (function () {
     App.Main = function () {
         var menu = new Menu("#Menu-open", "#Menu-close");
         var slide = new Slide("#slide");
+        $("#slide .next").click(function () { slide.Next(); });
+        $("#slide .previous").click(function () { slide.Previous(); });
         console.log("Started !");
     };
     return App;
