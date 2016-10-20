@@ -1,0 +1,14 @@
+header
+{
+    font-family: $font-title;
+
+    margin: $default-margin;
+
+    color: $color-text-quote;
+
+    h1
+    {
+        display: inline;
+        color: $color-text-title;        
+    }
+}

@@ -6,6 +6,8 @@
 @import 'Components/MenuOpenComponent';
 @import 'Components/ProjectComponent';
 @import 'Components/SlideComponent';
+@import 'Components/FooterComponent';
+@import 'Components/HeaderComponent';
   
 // Remise à zéro 
 *
@@ -25,5 +27,23 @@ html, body
 body
 {
     background-color: $color-dark;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a
+{
+    text-decoration: none;
+    color: $color-a-link;
+
+    &:hover
+    {
+        color: $color-a-hover;
+    }
+
+    &:visited
+    {
+        color: $color-a-visited;
+    }
 }
  
