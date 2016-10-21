@@ -19,18 +19,12 @@ class Menu {
         this.Toggle();
 
         $(toggle).mouseover(() => {
-            console.log("Over");
-            
             this.Open();
         });
-        $(toggle).mouseout(() => {
-            console.log("Out");
-            
+        $(target).mouseleave(() => {
             this.Close();
         });
         $(toggle).click(() => {
-            console.log("Toggle");
-            
             this.Toggle();
         });
     }
