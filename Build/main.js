@@ -11,15 +11,12 @@ var Menu = (function () {
         this.locked = false;
         this.Toggle();
         $(toggle).mouseover(function () {
-            console.log("Over");
             _this.Open();
         });
-        $(toggle).mouseout(function () {
-            console.log("Out");
+        $(target).mouseleave(function () {
             _this.Close();
         });
         $(toggle).click(function () {
-            console.log("Toggle");
             _this.Toggle();
         });
     }

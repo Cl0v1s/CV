@@ -1,14 +1,35 @@
+@import './../Chart';
+
 header
 {
     font-family: $font-title;
 
-    margin: $default-margin;
+    margin: 2%;
+    font-size: 26px;
 
-    color: $color-text-quote;
+    color: $color-text-base;
+    text-transform: uppercase;
 
     h1
     {
         display: inline;
-        color: $color-text-title;        
+        font-weight: normal;
+        color: $color-text-title;  
+
+        font-size: 35px;
+        text-transform: none;
+        
+
+        &:before
+        {
+            content: "$(";
+            color: $color-text-special;
+        }      
+
+        &:after
+        {
+            content: ")";
+            color: $color-text-special;
+        }
     }
 }
