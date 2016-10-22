@@ -2,6 +2,7 @@ class App
 {
     public static Main() : void
     {
+        let sort : Sort = new Sort("#slide ul");
         let menu : Menu = new Menu("#Menu-open", "#Menu-close");
         let slide : Slide = new Slide("#slide");
 

@@ -29,9 +29,10 @@
     <div id="Menu-open">
         <h2>Projets</h2>
         <ul class="projects tree">
-            <li>Jeux vidéos</li>
-            <li>Web</li>
-            <li>Applications</li>
+            <li><a href="Index.html">Tout</a></li>
+            <li><a href="Index.html?show=games">Jeux vidéo</a></li>
+            <li><a href="Index.html?show=web">Web</a></li>
+            <li><a href="Index.html?show=apps">Applications</a></li>
         </ul>
         <h2>Clovis</h2>
         <ul class="myself tree">
@@ -47,11 +48,29 @@
         <div class="previous"></div>
         <ul>
 
-            <li class="Project dark">
-                <h1>Nom projet 1 </h1>
-                <div class="image"></div>
+            <!--- Modèle
+                <li class="Project dark apps">
+                    <h1>Nom projet 1 </h1>
+                    <div class="image"></div>
+                    <div class="description">
+                        <p>Ceci est une description</p>
+                    </div>
+                    <nav>
+                        <a href="#" class="Button-link"></a>
+                        <a href="#" class="Button-link"></a>
+                        <a href="#" class="Button-link"></a>
+                        <a href="#" class="Button-link"></a>
+                    </nav>
+                </li>
+            -->
+
+            <!-- WEB -->
+            <li class="Project web">
+                <h1>Calk</h1>
+                <div class="image" style="background-image: url('Assets/Calk.png');"></div>
                 <div class="description">
-                    <p>Ceci est une description</p>
+                    <p>Calk est un projet réalisé dans le cadre des éléctions pour la BDE de l'IUT informatique de Bordeaux visant à fournir un support d'édition et de partage de cours collaboratif.</p>
+                    <p>Son fonctionnement est basé sur l'idée de calques. Un calque correspondant à une version d'un cours. Un calque peut être 'forké' et par là amélioré.</p>
                 </div>
                 <nav>
                     <a href="#" class="Button-link"></a>
@@ -61,11 +80,14 @@
                 </nav>
             </li>
 
-            <li class="Project focus">
-                <h1>Nom projet 2 </h1>
-                <div class="image"></div>
+            <li class="Project web">
+                <h1>IUT-Stajin</h1>
+                <div class="image" style="background-image: url('Assets/Stajin.png');"></div>
                 <div class="description">
-                    <p>Ceci est une description</p>
+                    <p>Stajin est une application de gestion de Stage développée pour le compte de l'Institut Universitaire de Technologie de Bordeaux.</p>
+                    <p>Il se découpe en deux modules distincts (DataUtils et Client).</p>
+                    <p>DataUtils prend la forme d'un script python chargé de traiter les données et de gérer les éventuelles erreurs.<br>
+                    Client consiste en une interface web chargée d'afficher différentes statistiques sur les données précedemment traitées.</p>
                 </div>
                 <nav>
                     <a href="#" class="Button-link"></a>
@@ -73,13 +95,15 @@
                     <a href="#" class="Button-link"></a>
                     <a href="#" class="Button-link"></a>
                 </nav>
-            </li>
+            </li> 
 
-            <li class="Project dark">
-                <h1>Nom projet 3 </h1>
-                <div class="image"></div>
+            <li class="Project web">
+                <h1>Pokemon-Go WebAPI</h1>
+                <div class="image" style="background-image: url('Assets/pgoapi.png');"></div>
                 <div class="description">
-                    <p>Ceci est une description</p>
+                    <p>Ce projet vise à fournir une API JSON permettant de récupérer des informations depuis les serveurs du jeu Pokémon GO afin de les rendre accessible depuis n'importe quel système connecté à internet.</p>
+                    <p>Ce système est basé sur le travail fournit par '<a href="https://github.com/tejado">Tejado</a>', pgoapi.</p>
+                    <p class="note">(L'illustration est tirée d'un projet secondaire tirant parti de 'Pokemon-Go WebAPI')</p>
                 </div>
                 <nav>
                     <a href="#" class="Button-link"></a>
@@ -87,42 +111,17 @@
                     <a href="#" class="Button-link"></a>
                     <a href="#" class="Button-link"></a>
                 </nav>
-            </li>
+            </li> 
+                    
 
-            <li class="Project dark">
-                <h1>Nom projet 3 </h1>
-                <div class="image"></div>
-                <div class="description">
-                    <p>Ceci est une description</p>
-                </div>
-                <nav>
-                    <a href="#" class="Button-link"></a>
-                    <a href="#" class="Button-link"></a>
-                    <a href="#" class="Button-link"></a>
-                    <a href="#" class="Button-link"></a>
-                </nav>
-            </li>
-        
-            <li class="Project dark">
-                <h1>Nom projet 3 </h1>
-                <div class="image"></div>
-                <div class="description">
-                    <p>Ceci est une description</p>
-                </div>
-                <nav>
-                    <a href="#" class="Button-link"></a>
-                    <a href="#" class="Button-link"></a>
-                    <a href="#" class="Button-link"></a>
-                    <a href="#" class="Button-link"></a>
-                </nav>
-            </li>
+           
 
 
         </ul>
     </div>
 
     <footer>
-        Tout droits réservés sauf exceptions. Les icons et illustrations appartiennent à leur auteurs respectifs.<br>
+        Tout droits réservés sauf exceptions. Les icônes et illustrations appartiennent à leur auteurs respectifs.<br>
         Design: <a href="http://cha.graphics">Cha Graphics</a> Code: <a href="mailto:portron.cl@gmail.com">Clovis Portron</a>
         <!--TODO: Ajout une page d'exception aux droits d'auteur -->
     </footer>

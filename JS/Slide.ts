@@ -6,15 +6,24 @@ class Slide
     {
         this.target = $(target);
 
-        let childs : number = this.target.find("ul li").length;
-        let size : number = this.target.find("ul li").width();
-
-        console.log(-((childs*size)/1.5));
-        $(target).css("margin-left", -((childs*size)/1.5));
+        this.Update();
 
         this.ApplyStyles();
 
-        console.log("Slide !");
+        $(window).resize(() => {this.Update();});
+    }
+
+    public Update() : void
+    {
+        let childs : number = this.target.find("ul li").length;
+        let size : number = this.target.find("ul li").width();
+        let position : number = 0;
+
+        // Récupération du centre de l'écran
+        position = $(window).width() / 2;
+        position -= (childs*size) / 2;
+
+        this.target.css("margin-left", position);
     }
 
     private ApplyStyles() : void

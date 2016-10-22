@@ -66,14 +66,21 @@ var Menu = (function () {
 })();
 var Slide = (function () {
     function Slide(target) {
+        var _this = this;
         this.target = $(target);
+        this.Update();
+        this.ApplyStyles();
+        $(window).resize(function () { _this.Update(); });
+    }
+    Slide.prototype.Update = function () {
         var childs = this.target.find("ul li").length;
         var size = this.target.find("ul li").width();
-        console.log(-((childs * size) / 1.5));
-        $(target).css("margin-left", -((childs * size) / 1.5));
-        this.ApplyStyles();
-        console.log("Slide !");
-    }
+        var position = 0;
+        // Récupération du centre de l'écran
+        position = $(window).width() / 2;
+        position -= (childs * size) / 2;
+        this.target.css("margin-left", position);
+    };
     Slide.prototype.ApplyStyles = function () {
         // Application des styles
         this.target.find("li").removeClass("focus");
@@ -108,10 +115,52 @@ var Slide = (function () {
     };
     return Slide;
 })();
+var Sort = (function () {
+    function Sort(target) {
+        this.target = $(target);
+        this.Apply();
+    }
+    Sort.prototype.Apply = function () {
+        var _this = this;
+        var Types = {
+            Games: "games",
+            Web: "web",
+            Apps: "apps",
+            All: "all"
+        };
+        var type;
+        type = window.location.toString().split("?show=")[1];
+        switch (type) {
+            case "games":
+                type = Types.Games;
+                break;
+            case "web":
+                type = Types.Web;
+                break;
+            case "apps":
+                type = Types.Apps;
+                break;
+            default:
+                type = Types.All;
+                break;
+        }
+        if (type == Types.All)
+            return;
+        Object.keys(Types).forEach(function (e) {
+            if (type != Types[e]) {
+                _this.target.find("." + Types[e]).remove();
+                console.log(Types[e]);
+            }
+        });
+        ;
+    };
+    return Sort;
+})();
 var App = (function () {
     function App() {
     }
     App.Main = function () {
+        var sort = new Sort("#slide ul");
         var menu = new Menu("#Menu-open", "#Menu-close");
         var slide = new Slide("#slide");
         $("#slide .next").click(function () { slide.Next(); });
