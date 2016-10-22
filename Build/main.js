@@ -67,6 +67,10 @@ var Menu = (function () {
 var Slide = (function () {
     function Slide(target) {
         this.target = $(target);
+        var childs = this.target.find("ul li").length;
+        var size = this.target.find("ul li").width();
+        console.log(-((childs * size) / 1.5));
+        $(target).css("margin-left", -((childs * size) / 1.5));
         this.ApplyStyles();
         console.log("Slide !");
     }

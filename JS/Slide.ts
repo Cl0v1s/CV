@@ -6,6 +6,12 @@ class Slide
     {
         this.target = $(target);
 
+        let childs : number = this.target.find("ul li").length;
+        let size : number = this.target.find("ul li").width();
+
+        console.log(-((childs*size)/1.5));
+        $(target).css("margin-left", -((childs*size)/1.5));
+
         this.ApplyStyles();
 
         console.log("Slide !");
