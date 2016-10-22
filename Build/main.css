@@ -891,14 +891,17 @@ div#slide {
   table-layout: fixed;
   height: 100%;
   width: 100%;
-  overflow-x: visible; }
+  overflow-x: visible;
+  z-index: 1; }
   div#slide ul {
+    position: relative;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
     list-style: none;
     overflow-x: visible;
+    z-index: 1;
     white-space: nowrap; }
   div#slide .next {
     position: absolute;
@@ -926,10 +929,10 @@ div#slide {
 
 footer {
   display: block;
-  width: 100%;
+  width: 24%;
   margin: 2%;
   position: fixed;
-  left: 0;
+  left: 38%;
   bottom: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 10px;

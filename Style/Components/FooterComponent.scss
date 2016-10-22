@@ -2,12 +2,13 @@ footer
 {
     display: block;
 
-    width: 100%;
+    width: 24%;
+
 
     margin: 2%;
 
     position: fixed;
-    left: 0;
+    left: 50%-(24%/2);
     bottom: 0;
 
     font-family: $font-base;
