@@ -46,10 +46,11 @@ class Slide
         first.animate(
             {
                 "margin-left" : -first.width() 
-            }, 50, function()
+            }, 100, "swing", function()
             {
-                self.target.find("li:last").after(first);    
-                first.css("margin-left", iMargin);
+                $(this).remove();
+                $(this).css("margin-left", iMargin);
+                self.target.find("li:last").after($(this)); 
                 self.ApplyStyles();
                 
             });
@@ -69,7 +70,7 @@ class Slide
         last.animate(
             {
                 "margin-left" : iMargin
-            }, 50, function()
+            }, 100, "swing",function()
             {
                 self.ApplyStyles();
             }

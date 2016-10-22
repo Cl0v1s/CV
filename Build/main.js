@@ -95,9 +95,10 @@ var Slide = (function () {
         var iMargin = first.css("margin-left"); // sauvegarde du margin pour restauration
         first.animate({
             "margin-left": -first.width()
-        }, 50, function () {
-            self.target.find("li:last").after(first);
-            first.css("margin-left", iMargin);
+        }, 100, "swing", function () {
+            $(this).remove();
+            $(this).css("margin-left", iMargin);
+            self.target.find("li:last").after($(this));
             self.ApplyStyles();
         });
     };
@@ -109,7 +110,7 @@ var Slide = (function () {
         this.target.find("li:first").before(last);
         last.animate({
             "margin-left": iMargin
-        }, 50, function () {
+        }, 100, "swing", function () {
             self.ApplyStyles();
         });
     };
