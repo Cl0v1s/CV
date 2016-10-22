@@ -38,8 +38,11 @@ div#slide
         right: 0;
         width: 25%;
         height: 100%;
-        /* background-color: red;*/
 
+        background-image: url("Assets/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 100px auto;
+        background-position: right center;
         z-index: 1;
     }
 
@@ -50,7 +53,12 @@ div#slide
         left: 0;
         width: 25%;
         height: 100%;
-        /*background-color: red;*/
+
+        background-image: url("Assets/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 100px auto;
+        background-position: right center;
+        transform: rotate(180deg);
     
         z-index: 1;
 
