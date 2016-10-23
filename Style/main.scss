@@ -9,6 +9,7 @@
 @import 'Components/FooterComponent';
 @import 'Components/HeaderComponent';
 @import 'Components/SocialComponent';
+@import 'Components/PanelComponent';
   
 // Remise à zéro 
 *
@@ -53,5 +54,11 @@ a
     {
         color: $color-a-visited;
     }
+}
+
+b
+{
+    color: $color-text-high;
+    font-weight: normal;
 }
  

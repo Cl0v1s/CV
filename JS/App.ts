@@ -2,12 +2,16 @@ class App
 {
     public static Main() : void
     {
-        let sort : Sort = new Sort("#slide ul");
         let menu : Menu = new Menu("#Menu-open", "#Menu-close");
-        let slide : Slide = new Slide("#slide");
 
-        $("#slide .next").click(() => {slide.Next();});
-        $("#slide .previous").click(() => {slide.Previous();});
+        if(window.location.toString().indexOf("Index.html") != -1)
+        {
+            let sort : Sort = new Sort("#slide ul");
+            let slide : Slide = new Slide("#slide");
+
+            $("#slide .next").click(() => {slide.Next();});
+            $("#slide .previous").click(() => {slide.Previous();});
+        }
 
         console.log("Started !");
     } 

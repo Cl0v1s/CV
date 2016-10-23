@@ -161,11 +161,13 @@ var App = (function () {
     function App() {
     }
     App.Main = function () {
-        var sort = new Sort("#slide ul");
         var menu = new Menu("#Menu-open", "#Menu-close");
-        var slide = new Slide("#slide");
-        $("#slide .next").click(function () { slide.Next(); });
-        $("#slide .previous").click(function () { slide.Previous(); });
+        if (window.location.toString().indexOf("Index.html") != -1) {
+            var sort = new Sort("#slide ul");
+            var slide = new Slide("#slide");
+            $("#slide .next").click(function () { slide.Next(); });
+            $("#slide .previous").click(function () { slide.Previous(); });
+        }
         console.log("Started !");
     };
     return App;
