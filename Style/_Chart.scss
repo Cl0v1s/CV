@@ -8,7 +8,7 @@
 $color-text-base:#E9E9E2; /*Blanc gris*/
 
 //---Ecriture type gras, rappel des mots cl�s du programme
-$color-text-high:#A63258; /*Rose*/
+$color-text-high:#c6275c; /*Rose*/
 
 //---Ecriture type lien 
 $color-a-link : #5CC1D3; /*Actif : bleu monokai*/
@@ -44,4 +44,8 @@ $color-high : #49483E;
 
 $default-margin : 10px;
 $default-border-radius: 5px;
+
+// Définitions des points de canvas
+
+$min-height: 760px;
 

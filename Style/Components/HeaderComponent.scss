@@ -7,11 +7,11 @@ header
     font-family: $font-title;
 
     margin: 2%;
-    margin-bottom: 0px;
 
     font-size: 26px;
     color: $color-text-base;
     text-transform: uppercase;
+   /* margin-top: 60px;  /* truc bizarre, le header disparait sur html sur overfloçw-y auto */
 
     h1
     {

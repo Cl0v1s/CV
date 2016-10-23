@@ -8,6 +8,7 @@
 @import 'Components/SlideComponent';
 @import 'Components/FooterComponent';
 @import 'Components/HeaderComponent';
+@import 'Components/SocialComponent';
   
 // Remise à zéro 
 *
@@ -21,12 +22,21 @@
 html, body
 {
     height: 100%;
+
+    
 }  
+
+html
+{
+    overflow-y: auto;
+
+}
 
 // Styles de base
 body
 {
     background-color: $color-dark;
+    min-height: $min-height;
 }
 
 a
