@@ -1,0 +1,73 @@
+// Inclusion des composants et autres élements
+@import 'Chart';
+
+@import 'Components/ButtonLinkComponent';
+@import 'Components/MenuCloseComponent';
+@import 'Components/MenuOpenComponent';
+@import 'Components/ProjectComponent';
+@import 'Components/SlideComponent';
+@import 'Components/FooterComponent';
+@import 'Components/HeaderComponent';
+@import 'Components/SocialComponent';
+@import 'Components/PanelComponent';
+  
+// Remise à zéro 
+*
+{        
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+ 
+html, body
+{
+    height: 105%;
+
+    
+}  
+
+html
+{
+    overflow-y: auto;
+
+}
+
+// Styles de base
+body
+{
+    background-color: $color-dark;
+    min-height: $min-height;
+}
+
+h2
+{
+    color: $color-text-title;
+    font-family: $font-title;
+    font-weight: normal;
+
+    margin-top: $default-margin;
+}
+
+a
+{
+    text-decoration: none;
+    color: $color-a-link;
+
+    &:hover
+    {
+        color: $color-a-hover;
+    }
+
+    &:visited
+    {
+        color: $color-a-visited;
+    }
+}
+
+b
+{
+    color: $color-text-high;
+    font-weight: normal;
+}
+ 

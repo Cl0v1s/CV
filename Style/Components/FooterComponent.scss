@@ -1,0 +1,20 @@
+footer
+{
+    display: block;
+
+    width: 24%;
+
+
+    margin: 2%;
+    margin-top: 0px;
+
+    position: fixed;
+    left: 50%-(24%/2);
+    bottom: 0;
+
+    font-family: $font-base;
+    font-size: 10px;
+    text-align:center;
+    color: $color-text-base;
+    
+}
