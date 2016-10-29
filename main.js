@@ -162,7 +162,7 @@ var App = (function () {
     }
     App.Main = function () {
         var menu = new Menu("#Menu-open", "#Menu-close");
-        if (window.location.toString().indexOf("index.html") != -1 || window.location.toString().indexOf(".html") == -1) {
+        if (window.location.toString().indexOf("Default.html") != -1) {
             var sort = new Sort("#slide ul");
             var slide = new Slide("#slide");
             $("#slide .next").click(function () { slide.Next(); });
