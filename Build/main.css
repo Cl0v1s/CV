@@ -934,9 +934,9 @@ footer {
   width: 24%;
   margin: 2%;
   margin-top: 0px;
-  /*position: fixed;
-    left: 50%-(24%/2);
-    bottom: 0;*/
+  position: fixed;
+  left: 38%;
+  bottom: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
   text-align: center;
