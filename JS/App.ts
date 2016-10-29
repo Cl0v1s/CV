@@ -4,7 +4,7 @@ class App
     {
         let menu : Menu = new Menu("#Menu-open", "#Menu-close");
 
-        if(window.location.toString().indexOf("Index.html") != -1)
+        if(window.location.toString().indexOf("index.html") != -1)
         {
             let sort : Sort = new Sort("#slide ul");
             let slide : Slide = new Slide("#slide");
