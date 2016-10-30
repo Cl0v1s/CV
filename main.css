@@ -1382,7 +1382,7 @@ div.Panel {
   overflow: hidden; }
 
 html, body {
-  height: 100%; }
+  height: 105%; }
 
 html {
   overflow-y: auto; }
@@ -1408,4 +1408,3 @@ a {
 b {
   color: #c6275c;
   font-weight: normal; }
-
