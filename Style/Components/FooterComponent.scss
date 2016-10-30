@@ -16,5 +16,10 @@ footer
     font-size: 10px;
     text-align:center;
     color: $color-text-base;
+
+    @media screen and (max-width: $break-width) 
+    {
+        display: none;
+    }
     
 }

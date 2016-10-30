@@ -35,11 +35,197 @@ div#slide
         
 
         white-space: nowrap;
+
+        /**
+        * Panel présentant un projet 
+        **/
+        li.Project
+        {
+            $height: 500px;
+            $center-height: 600px;
+
+            display: inline-block;
+            position: relative;
+            width: 25%;
+            height: $height;
+
+            margin-bottom: ($center-height - $height) / 2; 
+            margin-left: $default-margin;
+
+            font-family: $font-base;
+            color: $color-text-base;
+            text-align: initial;
+
+            border-top-left-radius: 15px;
+
+
+            background-color: $color-base;
+            box-shadow: 0px 0px 5px black;
+
+
+
+            transition: all 1s ease;
+
+            &:before
+            {
+                $size : 15px;
+
+                content : "";
+
+                position: absolute;
+                top:0;
+                left: 0;
+
+                width: 0;
+                height: 0;
+
+                border: $size solid rgba(0,0,0,0);
+                border-left: $size solid $color-high;
+
+
+                transform: rotate(45deg);
+            }
+
+
+            h1
+            {
+                font-family: $font-title;
+                color: $color-text-title;
+                padding: $default-margin;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            div.image
+            {
+                position: relative;
+
+                width: 100%;
+                height: 200px;
+
+                background-size: 0px 0px;
+
+                box-shadow: 0px 0px 5px black;
+
+                &:before
+                {   
+                    content : "";
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    width: 100%;
+                    height: 100%;
+
+                    background-size: cover;
+                    background-image: inherit;
+                    background-position: center;
+
+                    filter: blur(10px);
+
+                }
+
+                &:after
+                {
+                    content : "";
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    width: 100%;
+                    height: 100%;
+
+                    background-image: inherit;   
+                    background-size: auto 100%;
+                    background-repeat: no-repeat;
+                    background-position: center; 
+                }
+            }
+
+            div.description
+            {
+                width: 100%;
+
+                font-family: $font-base;
+                color: $color-text-base;
+
+                padding: $default-margin;
+
+                white-space: normal;
+
+                p
+                {
+                    margin-bottom: $default-margin;
+                    text-align: left;
+                    overflow: initial;
+                    display: block;
+                    width: 100%;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+
+                    &.note
+                    {
+                        text-align: center;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            nav
+            {
+
+                opacity: 0;
+                /*position: absolute;
+                left: 0;
+                bottom: 50px;*/
+
+                width: 100%;
+
+                transition: all 0.5s ease;
+
+            }
+
+            &.focus
+            {
+                margin-bottom: 0;
+                height: $center-height;
+
+                nav 
+                {
+                opacity: 1;
+                }
+            }
+
+
+            &.dark
+            {
+
+
+                &:after
+                {
+                    content :'';
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    width: 100%;
+                    height: 100%;
+
+                    background-color: rgba(0,0,0,0.5);
+                }
+            }
+
+        }
+
+
     }
 
     .next 
     {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 25%;
@@ -56,7 +242,7 @@ div#slide
 
     .previous
     {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 25%;
@@ -74,4 +260,61 @@ div#slide
         z-index: 2;
 
     }
+
+    // Slide pour mobile
+    @media screen and (max-width: $break-width) 
+    {
+        &
+        {
+            padding-bottom: 72px;
+
+            .next
+            {
+                background-position: right 90%;
+                background-size: 50px auto;
+            }
+
+            .previous
+            {
+                background-position: right 10%;
+                background-size: 50px auto;
+                
+            }
+
+            ul
+            {
+                li.Project
+                {
+                    width: 100%;
+                    height: 90%;
+
+                    margin-left: 0;
+
+                    margin-bottom: 0;
+
+                    div.image
+                    {
+                        height: 100px;
+                    }
+
+                    div.description
+                    {
+                        font-size: 4vw;
+
+                        p.note
+                        {
+                            font-size: 3vw;
+                        }
+                    }
+
+                    &.focus
+                    {
+                        height: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+
 }

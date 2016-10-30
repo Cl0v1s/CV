@@ -4,7 +4,6 @@
 @import 'Components/ButtonLinkComponent';
 @import 'Components/MenuCloseComponent';
 @import 'Components/MenuOpenComponent';
-@import 'Components/ProjectComponent';
 @import 'Components/SlideComponent';
 @import 'Components/FooterComponent';
 @import 'Components/HeaderComponent';
@@ -24,7 +23,12 @@ html, body
 {
     height: 105%;
 
-    
+    @media screen and (max-width: $break-width) {
+        &
+        {
+            height: 100%;
+        }
+    }
 }  
 
 html
@@ -38,6 +42,13 @@ body
 {
     background-color: $color-dark;
     min-height: $min-height;
+
+    @media screen and (max-width: $break-width) {
+        &
+        {
+            min-height: 100%;
+        }
+    }
 }
 
 h2

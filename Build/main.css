@@ -666,227 +666,6 @@ div#Menu-open {
 /*$line-height : ;
 $font-size-defaut : ;
 $font-size-h1 : ;*/
-/**
- * Panel présentant un projet 
- **/
-li.Project {
-  display: inline-block;
-  position: relative;
-  width: 25%;
-  height: 500px;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  font-family: "Open Sans", sans-serif;
-  color: #E9E9E2;
-  text-align: initial;
-  border-top-left-radius: 15px;
-  background-color: #272822;
-  box-shadow: 0px 0px 5px black;
-  transition: all 1s ease; }
-  li.Project:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 15px solid transparent;
-    border-left: 15px solid #49483E;
-    transform: rotate(45deg); }
-  li.Project h1 {
-    font-family: "Roboto Condensed", sans-serif;
-    color: #91C710;
-    padding: 10px;
-    font-weight: normal;
-    text-align: center; }
-  li.Project div.image {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-size: 0px 0px;
-    box-shadow: 0px 0px 5px black; }
-    li.Project div.image:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-image: inherit;
-      background-position: center;
-      filter: blur(10px); }
-    li.Project div.image:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: inherit;
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center; }
-  li.Project div.description {
-    width: 100%;
-    font-family: "Open Sans", sans-serif;
-    color: #E9E9E2;
-    padding: 10px;
-    white-space: normal; }
-    li.Project div.description p {
-      margin-bottom: 10px;
-      text-align: left;
-      overflow: initial;
-      display: block;
-      width: 100%;
-      word-wrap: break-word;
-      overflow-wrap: break-word; }
-      li.Project div.description p.note {
-        text-align: center;
-        font-size: 10px; }
-  li.Project nav {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    bottom: 50px;
-    width: 100%;
-    transition: all 0.5s ease; }
-  li.Project.focus {
-    margin-bottom: 0;
-    height: 600px; }
-    li.Project.focus nav {
-      opacity: 1; }
-  li.Project.dark:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); }
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsDrvev4WAjW489CRDHIkJ90.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsCGXDOnx9ptx3UTSPTrfsgk.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsAZ98xO_Wnt-JIem4AuLGfs.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF; }
-
-/* greek */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsE1G989qbVg6RT5ly5jB8V8.woff2) format("woff2");
-  unicode-range: U+0370-03FF; }
-
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsJ84zb0nVte6liF9gGtpo1Y.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsD86pq2NkPzVgw_9lpT6RGI.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url("Assets/Fonts/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* greek-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF; }
-
-/* greek */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-  unicode-range: U+0370-03FF; }
-
-/* vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("Assets/Fonts/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-
-/*Blanc gris*/
-/*Rose*/
-/*Actif : bleu monokai*/
-/*Survol : bleu plus clair*/
-/*Visit� : bleu plus fonc�*/
-/*Vert*/
-/*Jaune*/
-/*$line-height : ;
-$font-size-defaut : ;
-$font-size-h1 : ;*/
 div#slide {
   display: table;
   table-layout: fixed;
@@ -902,9 +681,107 @@ div#slide {
     list-style: none;
     overflow: visible;
     z-index: 1;
-    white-space: nowrap; }
+    white-space: nowrap;
+    /**
+        * Panel présentant un projet 
+        **/ }
+    div#slide ul li.Project {
+      display: inline-block;
+      position: relative;
+      width: 25%;
+      height: 500px;
+      margin-bottom: 50px;
+      margin-left: 10px;
+      font-family: "Open Sans", sans-serif;
+      color: #E9E9E2;
+      text-align: initial;
+      border-top-left-radius: 15px;
+      background-color: #272822;
+      box-shadow: 0px 0px 5px black;
+      transition: all 1s ease; }
+      div#slide ul li.Project:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-left: 15px solid #49483E;
+        transform: rotate(45deg); }
+      div#slide ul li.Project h1 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: #91C710;
+        padding: 10px;
+        font-weight: normal;
+        text-align: center; }
+      div#slide ul li.Project div.image {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-size: 0px 0px;
+        box-shadow: 0px 0px 5px black; }
+        div#slide ul li.Project div.image:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-image: inherit;
+          background-position: center;
+          filter: blur(10px); }
+        div#slide ul li.Project div.image:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: inherit;
+          background-size: auto 100%;
+          background-repeat: no-repeat;
+          background-position: center; }
+      div#slide ul li.Project div.description {
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        color: #E9E9E2;
+        padding: 10px;
+        white-space: normal; }
+        div#slide ul li.Project div.description p {
+          margin-bottom: 10px;
+          text-align: left;
+          overflow: initial;
+          display: block;
+          width: 100%;
+          word-wrap: break-word;
+          overflow-wrap: break-word; }
+          div#slide ul li.Project div.description p.note {
+            text-align: center;
+            font-size: 10px; }
+      div#slide ul li.Project nav {
+        opacity: 0;
+        /*position: absolute;
+                left: 0;
+                bottom: 50px;*/
+        width: 100%;
+        transition: all 0.5s ease; }
+      div#slide ul li.Project.focus {
+        margin-bottom: 0;
+        height: 600px; }
+        div#slide ul li.Project.focus nav {
+          opacity: 1; }
+      div#slide ul li.Project.dark:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); }
   div#slide .next {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 25%;
@@ -916,7 +793,7 @@ div#slide {
     background-position: right center;
     z-index: 2; }
   div#slide .previous {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 25%;
@@ -928,6 +805,28 @@ div#slide {
     background-position: right center;
     transform: rotate(180deg);
     z-index: 2; }
+  @media screen and (max-width: 700px) {
+    div#slide {
+      padding-bottom: 72px; }
+      div#slide .next {
+        background-position: right 90%;
+        background-size: 50px auto; }
+      div#slide .previous {
+        background-position: right 10%;
+        background-size: 50px auto; }
+      div#slide ul li.Project {
+        width: 100%;
+        height: 90%;
+        margin-left: 0;
+        margin-bottom: 0; }
+        div#slide ul li.Project div.image {
+          height: 100px; }
+        div#slide ul li.Project div.description {
+          font-size: 4vw; }
+          div#slide ul li.Project div.description p.note {
+            font-size: 3vw; }
+        div#slide ul li.Project.focus {
+          height: 90%; } }
 
 footer {
   display: block;
@@ -941,6 +840,9 @@ footer {
   font-size: 10px;
   text-align: center;
   color: #E9E9E2; }
+  @media screen and (max-width: 700px) {
+    footer {
+      display: none; } }
 
 /* cyrillic-ext */
 @font-face {
@@ -1067,6 +969,7 @@ $font-size-h1 : ;*/
 header {
   font-family: "Roboto Condensed", sans-serif;
   margin: 2%;
+  max-width: 80%;
   font-size: 26px;
   color: #E9E9E2;
   text-transform: uppercase;
@@ -1365,7 +1268,8 @@ div.Panel {
     background-color: #272822;
     font-family: "Open Sans", sans-serif;
     color: #E9E9E2;
-    box-shadow: 0px 0px 5px black; }
+    box-shadow: 0px 0px 5px black;
+    overflow-y: auto; }
     div.Panel div p {
       margin: 10px; }
     div.Panel div img {
@@ -1374,6 +1278,10 @@ div.Panel {
       max-width: 700px;
       margin: auto;
       margin-top: 30px; }
+      @media screen and (max-width: 700px) {
+        div.Panel div img {
+          width: 100%;
+          max-width: 100%; } }
 
 * {
   margin: 0;
@@ -1383,6 +1291,9 @@ div.Panel {
 
 html, body {
   height: 105%; }
+  @media screen and (max-width: 700px) {
+    html, body {
+      height: 100%; } }
 
 html {
   overflow-y: auto; }
@@ -1390,6 +1301,9 @@ html {
 body {
   background-color: #161714;
   min-height: 760px; }
+  @media screen and (max-width: 700px) {
+    body {
+      min-height: 100%; } }
 
 h2 {
   color: #91C710;

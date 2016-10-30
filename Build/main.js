@@ -73,12 +73,24 @@ var Slide = (function () {
         $(window).resize(function () { _this.Update(); });
     }
     Slide.prototype.Update = function () {
+        var _this = this;
+        // Correction bug chelou de margin pas correcte
+        var self = this;
+        var iMargin = this.target.find("li:first").css("margin-left"); // sauvegarde du margin pour restauration
+        this.target.find("li").each(function (index, e) {
+            $(_this).remove();
+            $(_this).css("margin-left", iMargin);
+            self.target.find("li:last").after(e);
+        });
         var childs = this.target.find("ul li").length;
         var size = this.target.find("ul li").width();
+        var margin = parseInt(this.target.find("ul li").css("margin-left").replace("px", ""));
         var position = 0;
+        size = size + margin * 1;
         // Récupération du centre de l'écran
-        position = $(window).width() / 2;
-        position -= (childs * size) / 2;
+        position = Math.round($(window).width() / 2);
+        position -= Math.round((childs * size) / 2);
+        //position -= 15; // WTF ? Sans ça c'est pas centré
         this.target.css("margin-left", position);
     };
     Slide.prototype.ApplyStyles = function () {

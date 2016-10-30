@@ -26,6 +26,8 @@ div.Panel
 
         box-shadow: 0px 0px 5px black;
 
+        overflow-y: auto;
+
 
         p
         {
@@ -42,6 +44,14 @@ div.Panel
             margin: auto;
             margin-top: $default-margin*3;
 
+            @media screen and (max-width: $break-width) 
+            {
+                &
+                {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
         }
     }
 }
